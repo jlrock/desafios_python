@@ -34,9 +34,7 @@ ax.legend(loc='center right')
 
 # 3. Função de Animação
 def atualizar(frame):
-    # 'frame' é o número do dia atual na animação
     for i in range(4):
-        # Atualizamos os dados da linha até o ponto 'frame'
         linhas[i].set_data(range(frame), historico[:frame, i])
     return linhas
 
